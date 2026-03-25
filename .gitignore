@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual env
+venv/
+.env/
+
+# VS Code
+.vscode/
+
+# Data
+data/*.csv
+data/*.xlsx
+
+# Models (optional - see below)
+models/*.pkl
+models/*.joblib
+
+# OS
+.DS_Store
+Thumbs.db
