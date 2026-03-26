@@ -115,4 +115,4 @@ if st.session_state.get("just_ran"):
 
     if st.button("👉 View Results", use_container_width=True):
         st.session_state["just_ran"] = False
-        st.switch_page("pages/2_Results.py")
+        st.switch_page("pages/2_results.py")

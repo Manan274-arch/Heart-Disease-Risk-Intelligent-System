@@ -116,7 +116,7 @@ st.success("Prediction ready. View detailed insights for deeper explanation.")
 
 if st.button("🔍 View Detailed Insights"):
     st.session_state["go_to_insights"] = True
-    st.switch_page("pages/3_Insights.py")
+    st.switch_page("pages/3_insights.py")
 
 # -----------------------------
 # FOOTER NOTE
