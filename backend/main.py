@@ -24,7 +24,7 @@ rf = joblib.load(os.path.join(MODEL_DIR, "rf.pkl"))
 xgb = joblib.load(os.path.join(MODEL_DIR, "xgb.pkl"))
 lgb = joblib.load(os.path.join(MODEL_DIR, "lgb.pkl"))
 calibrator = joblib.load(os.path.join(MODEL_DIR, "calibrator.pkl"))
-features = joblib.load(os.path.join(MODEL_DIR, "features.pkl"))
+feature_columns = joblib.load(os.path.join(MODEL_DIR, "features.pkl"))
 thresholds = joblib.load(os.path.join(MODEL_DIR, "risk_thresholds.pkl"))
 
 # SHAP explainer (XGB)
