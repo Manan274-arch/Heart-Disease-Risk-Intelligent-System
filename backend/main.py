@@ -18,6 +18,8 @@ import os
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 MODEL_DIR = os.path.join(BASE_DIR, "models")
 
+print("MODEL DIR:", MODEL_DIR)  # debug (optional)
+
 rf = joblib.load(os.path.join(MODEL_DIR, "rf.pkl"))
 xgb = joblib.load(os.path.join(MODEL_DIR, "xgb.pkl"))
 lgb = joblib.load(os.path.join(MODEL_DIR, "lgb.pkl"))
