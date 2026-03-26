@@ -1,6 +1,6 @@
 import requests
 
-API_URL = "https://your-render-url/predict"
+API_URL = "https://heart-disease-risk-intelligent-system.onrender.com/predict"
 
 def get_prediction(data):
     try:
