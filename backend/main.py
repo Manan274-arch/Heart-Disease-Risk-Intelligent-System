@@ -14,17 +14,15 @@ app=FastAPI()
 # -----------------------------
 
 import os
-import joblib
 
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 MODEL_DIR = os.path.join(BASE_DIR, "models")
 
 rf = joblib.load(os.path.join(MODEL_DIR, "rf.pkl"))
 xgb = joblib.load(os.path.join(MODEL_DIR, "xgb.pkl"))
 lgb = joblib.load(os.path.join(MODEL_DIR, "lgb.pkl"))
 calibrator = joblib.load(os.path.join(MODEL_DIR, "calibrator.pkl"))
-
-feature_columns = joblib.load(os.path.join(MODEL_DIR, "features.pkl"))
+features = joblib.load(os.path.join(MODEL_DIR, "features.pkl"))
 thresholds = joblib.load(os.path.join(MODEL_DIR, "risk_thresholds.pkl"))
 
 # SHAP explainer (XGB)
